@@ -6,6 +6,43 @@
 	<title># | Jogo da velha </title>
 </head>
 <body>
-	
+	<div class="globalContainer">
+		<header>
+			<p class="gameTitle"># Jogo da velha #</p>
+		</header>
+
+		<main>
+
+			<div class="mainContainer">
+				
+				<div id="pannelForBegginer">
+					<p id="saysWhoStartsTheGame"></p>
+				</div>
+
+				<div class="board">
+					<div id="p1" class="square" onclick="play(1);"></div>
+					<div id="p2" class="square" onclick="play(2);"></div>
+					<div id="p3" class="square" onclick="play(3);"></div>
+
+					<div id="p4" class="square" onclick="play(4);"></div>
+					<div id="p5" class="square" onclick="play(5);"></div>
+					<div id="p6" class="square" onclick="play(6);"></div>
+
+					<div id="p7" class="square" onclick="play(7);"></div>
+					<div id="p8" class="square" onclick="play(8);"></div>
+					<div id="p9" class="square" onclick="play(9);"></div>
+				</div>
+
+				<button id="playAgainButton" type="button" onclick="startGame();">Jogar novamente</button>
+			</div>
+		</main>
+
+		<div id="modalForMessages" onclick="hideModal();">
+			<div class="cardForMessage">
+				<p id="tellsTheWinner"></p>
+				<div class="close">X</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
